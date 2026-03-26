@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Happy Birthday Ritu 🎂</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            font-family: Arial;
+            background: linear-gradient(to right, #ff758c, #ff7eb3);
+            overflow: hidden;
+            color: white;
+        }
+
+        h1 {
+            font-size: 55px;
+            margin-top: 50px;
+            animation: glow 2s infinite alternate;
+        }
+
+        @keyframes glow {
+            from { text-shadow: 0 0 10px white; }
+            to { text-shadow: 0 0 30px yellow; }
+        }
+
+        p {
+            font-size: 22px;
+        }
+
+        img {
+            width: 250px;
+            border-radius: 20px;
+            margin-top: 20px;
+            box-shadow: 0 0 20px white;
+        }
+
+        .btn {
+            margin-top: 20px;
+            padding: 15px 25px;
+            font-size: 18px;
+            background: white;
+            color: #ff4e8a;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background: #ff4e8a;
+            color: white;
+        }
+
+        /* Balloons */
+        .balloon {
+            width: 50px;
+            height: 70px;
+            background: red;
+            border-radius: 50%;
+            position: absolute;
+            bottom: -100px;
+            animation: float 6s infinite;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-800px); }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>🎉 Happy Birthday Ritu 🎂</h1>
+
+    <p>Wishing you a day filled with love, joy and happiness ❤️</p>
+
+    <!-- Photo -->
+    <img src="ritu.jpg" alt="Ritu Photo">
+
+    <p>💖 You are very special 💖</p>
+
+    <button class="btn" onclick="showMessage()">Click for Surprise 🎁</button>
+
+    <p id="msg"></p>
+
+    <!-- Balloons -->
+    <div class="balloon" style="left:10%; background:yellow;"></div>
+    <div class="balloon" style="left:30%; background:blue;"></div>
+    <div class="balloon" style="left:50%; background:red;"></div>
+    <div class="balloon" style="left:70%; background:green;"></div>
+    <div class="balloon" style="left:90%; background:pink;"></div>
+
+    <script>
+        function showMessage() {
+            document.getElementById("msg").innerHTML =
+            "💌 Happy Birthday Ritu 💖\nYou make life more beautiful 😊\nStay happy always 🎉";
+        }
+    </script>
+
+</body>
+</html>
